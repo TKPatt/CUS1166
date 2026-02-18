@@ -17,15 +17,14 @@ public class SelectRole {
              frame.setContentPane(new OwnerForm().getPanel());
              frame.pack();
              frame.setLocationRelativeTo(null);
-             JOptionPane.showMessageDialog(panel1, "Owner clicked");
                  });
+
          clientSubmitJobButton.addActionListener(e -> {
              JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(panel1);
              frame.setTitle("VCTRS - Client");
              frame.setContentPane(new ClientForm().getPanel());
              frame.pack();
              frame.setLocationRelativeTo(null);
-
          });
     }
     public JPanel getPanel() {
