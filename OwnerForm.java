@@ -2,14 +2,14 @@ import javax.swing.*;
 
 public class OwnerForm {
     private JPanel panel1;
-    private JTextField OwnerIDtextfield;
+    private JTextField OwnerIDTextField;
     private JTextField VehicleMakeTextField;
-    private JTextField VehicleModeltextField;
-    private JTextField Residencytimetextfield;
+    private JTextField VehicleModelTextField;
+    private JTextField ResidencyTimeTextField;
     private JButton backButton;
     private JButton clearButton;
     private JButton submitButton;
-    private JTextField VehicleYeartextfield;
+    private JTextField VehicleYearTextField;
 
     public OwnerForm() {
         backButton.addActionListener(e -> {
@@ -20,11 +20,11 @@ public class OwnerForm {
             frame.setLocationRelativeTo(null);
         });
         clearButton.addActionListener(e -> {
-            OwnerIDtextfield.setText("");
+            OwnerIDTextField.setText("");
             VehicleMakeTextField.setText("");
-            VehicleModeltextField.setText("");
-            Residencytimetextfield.setText("");
-            VehicleYeartextfield.setText("");
+            VehicleModelTextField.setText("");
+            ResidencyTimeTextField.setText("");
+            VehicleYearTextField.setText("");
         });
         submitButton.addActionListener(e -> {
             JOptionPane.showMessageDialog(panel1,"Submit button is working");
